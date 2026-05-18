@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tab Snooze — close tabs now and reopen them later. Offline, private, no account." />
+  <title>Tab Snooze — Snooze browser tabs for Chrome</title>
+  <script src="theme-boot.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand-block">
+        <a class="brand" href="./">
+          <img src="https://raw.githubusercontent.com/Makogai/tab-snooze/main/assets/images/logo512.png" width="36" height="36" alt="" />
+          <span class="brand-name">Tab Snooze</span>
+        </a>
+        <a class="version-flag" data-version-badge href="#" data-version-fallback="1.0.0">v1.0.0</a>
+      </div>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Site">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="#install">Install</a>
+        </nav>
+        <div class="theme-toggle" role="radiogroup" aria-label="Site theme">
+          <button type="button" class="theme-toggle-btn" data-theme-btn="system" aria-checked="true">Auto</button>
+          <button type="button" class="theme-toggle-btn" data-theme-btn="light">Light</button>
+          <button type="button" class="theme-toggle-btn" data-theme-btn="dark">Dark</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img
+          class="hero-logo"
+          src="https://raw.githubusercontent.com/Makogai/tab-snooze/main/assets/images/logo512.png"
+          width="88"
+          height="88"
+          alt="Tab Snooze logo"
+        />
+        <h1>Close now,<br />reopen later</h1>
+        <p class="lead">
+          Snooze the tab you are on. It closes immediately and comes back when you choose — no account,
+          no cloud, everything stays on your device.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="install" href="https://github.com/Makogai/tab-snooze/releases">Get on GitHub</a>
+          <a class="btn btn-secondary" href="https://github.com/Makogai/tab-snooze" target="_blank" rel="noopener noreferrer">View source</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2 class="section-title">Built for focus</h2>
+        <p class="section-sub">Park tabs you are not ready to close forever — read-later, end-of-day cleanup, or remind me tonight.</p>
+        <div class="features">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#9200;</div>
+            <h3>Quick presets</h3>
+            <p>15 minutes, 1 hour, 3 hours, this evening, or tomorrow morning — one click from the toolbar.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128203;</div>
+            <h3>Snoozed list</h3>
+            <p>See what is waiting, wake a tab early, or cancel. Badge shows how many tabs are snoozed.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">&#128274;</div>
+            <h3>Private and offline</h3>
+            <p>Only URLs and titles are stored locally in Chrome. No analytics and no backend.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section-muted">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps">
+          <li>Open the tab you want to park.</li>
+          <li>Click Tab Snooze and pick a time.</li>
+          <li>The tab closes; when the alarm fires it reopens with a notification.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Tab Snooze · <a href="https://github.com/Makogai">Makogai</a> · <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

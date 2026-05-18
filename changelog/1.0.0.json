@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "date": "2026-05-18",
+  "title": "First release",
+  "changes": [
+    "Snooze the active tab for 15 minutes, 1 hour, 3 hours, this evening, or tomorrow morning.",
+    "Snoozed list with wake now or cancel — badge shows how many tabs are waiting.",
+    "Light and dark themes with System / Light / Dark in Settings.",
+    "Fully offline — URLs stored locally, no account or cloud sync."
+  ]
+}

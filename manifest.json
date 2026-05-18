@@ -1,0 +1,26 @@
+{
+  "name": "Tab Snooze",
+  "description": "Snooze tabs until later. They close now and reopen automatically — offline, private, no account.",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Tab Snooze",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "64": "assets/icons/icon64.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "64": "assets/icons/icon64.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "permissions": ["tabs", "alarms", "storage", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
