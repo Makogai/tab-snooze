@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
 import vue from 'unplugin-vue/esbuild';
-import { copyDocsCss, writeDistPopupCss } from '@makogai/extension-brand/build-helpers';
+import { writeDistPopupCss } from '@makogai/extension-brand/build-helpers';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
@@ -62,7 +62,6 @@ async function copyStaticFiles() {
   await fs.copy(path.join(rootDir, 'changelog'), path.join(outDir, 'changelog'));
 
   await writeDistPopupCss(rootDir);
-  await copyDocsCss(rootDir);
 
   const popupDir = path.join(outDir, 'popup');
   let popupHtml = await fs.readFile(path.join(rootDir, 'src/popup/popup.html'), 'utf8');
